@@ -219,20 +219,33 @@
 		<!-- Scripts -->
 			
 
-<script src="https://chat-bubble-magic-38.lovable.app/chat-widget.js"></script>
+<!-- Chat Widget -->
 <script>
-  ChatWidget.init({
+  window.ChatWidgetConfig = {
     webhookUrl: "https://n8n.faisalsden.online/webhook/5fe279c8-7561-44d6-be97-bd499e28e9c1",
-    title: "AI Assistant",
-    subtitle: "How can I help you today?",
-    logo: "https://api.dicebear.com/7.x/bottts/svg?seed=assistant&backgroundColor=ffc107",
-    welcomeMessage: "Hello! 👋 I'm your AI assistant. How can I help you today?",
-    suggestions: ["Tell me about your services","How does this work?","Get started"],
-    primaryColor: "#FFC107",
-    position: "bottom-right"
-  });
+    title: "Chat Support",
+    subtitle: "We typically reply within minutes",
+    logo: "",
+    welcomeMessage: "Hello! 👋 How can I help you today?",
+    suggestions: ["What services do you offer?", "I need help with my order"],
+    position: "bottom-right",
+    template: "modern",
+    colors: {
+      primary: "#f59e0b",
+      headerBg: "#f59e0b",
+      headerText: "#1a1a2e",
+      userMessageBg: "#f59e0b",
+      userMessageText: "#1a1a2e",
+      botMessageBg: "#f1f5f9",
+      botMessageText: "#1e293b",
+      widgetBg: "#ffffff",
+      borderRadius: "16px"
+    }
+  };
 </script>
+<script src="https://chat-bubble-magic-38.lovable.app/chat-widget.js" defer></script>
 
 	</body>
 
 </html>
+
